@@ -44,29 +44,60 @@ const Register = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='register-form'>
-            <ToastContainer />
-            <fieldset>
-                <legend>Signup</legend>
-                <label htmlFor="un">Username:</label>
-                <input type="text" id='un' placeholder='Enter Username' name='username' value={userData.username} onChange={handleChange} />
+        <div className="auth-container">
+            <form onSubmit={handleSubmit} className="auth-card">
+                <ToastContainer />
 
+                <h2 className="auth-title">Signup</h2>
 
-                <label htmlFor="email">Email:</label>
-                <input type="email" id='email' placeholder='Enter Email' name='email' value={userData.email} onChange={handleChange} />
+                <label>Username</label>
+                <input
+                    type="text"
+                    placeholder="Enter Username"
+                    name="username"
+                    value={userData.username}
+                    onChange={handleChange}
+                />
 
-                <label htmlFor="password">Password:</label>
-                <input type="password" id='password' placeholder='Enter Password' name='password' value={userData.password} onChange={handleChange} />
+                <label>Email</label>
+                <input
+                    type="email"
+                    placeholder="Enter Email"
+                    name="email"
+                    value={userData.email}
+                    onChange={handleChange}
+                />
 
-                <div className="spacer"></div>
+                <label>Password</label>
+                <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="password"
+                    value={userData.password}
+                    onChange={handleChange}
+                />
 
-                <div className="button-container">
-                    <button type="submit">Submit</button>
-                    <button type="reset" onClick={() => setUserData({ name, email, password })}>Reset</button>
+                <div className="auth-buttons">
+                    <button type="submit" className="primary-btn">
+                        Register
+                    </button>
+
+                    <button
+                        type="button"
+                        className="secondary-btn"
+                        onClick={() =>
+                            setUserData({
+                                username: "",
+                                email: "",
+                                password: ""
+                            })
+                        }
+                    >
+                        Reset
+                    </button>
                 </div>
-
-            </fieldset>
-        </form>
+            </form>
+        </div>
     );
 };
 

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify'
 
+
 const Login = () => {
 
   let [email, setEmail] = useState('');
@@ -42,25 +43,22 @@ const Login = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit} className='register-form'>
-      <ToastContainer />
-      <fieldset>
+    <div className="auth-container">
+      <form onSubmit={handleSubmit} className="auth-card">
         <legend>Login</legend>
 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id='email' placeholder='Enter Email' name='email' onChange={handleEmail} />
+        <label>Email:</label>
+        <input type="email" placeholder="Enter Email" onChange={handleEmail} />
 
-        <label htmlFor="password">Password:</label>
-        <input type="password" id='password' placeholder='Enter Password' name='password' onChange={handlePassword} />
+        <label>Password:</label>
+        <input type="password" placeholder="Enter Password" onChange={handlePassword} />
 
-
-        <div className="button-container">
-          <button type="submit">Submit</button>
-          <button type="reset" >Reset</button>
+        <div className="auth-buttons">
+          <button type="submit" className="primary-btn">Login</button>
+          <button type="reset" className="secondary-btn">Reset</button>
         </div>
-
-      </fieldset>
-    </form>
+      </form>
+    </div>
   )
 }
 

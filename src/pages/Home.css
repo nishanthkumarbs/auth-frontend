@@ -1,0 +1,66 @@
+.home-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef4ff, #f7faff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-card {
+    background: #FFFFFF;
+    padding: 60px;
+    border-radius: 20px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(106, 159, 241, 0.15);
+}
+
+.home-card h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.highlight {
+    color: #6a9ff1;
+    font-weight: 600;
+}
+
+.home-button,
+.home-link {
+    display: inline-block;
+    padding: 12px 26px;
+    margin: 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Primary Button */
+.home-button {
+    background-color: #6a9ff1;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #5a8ee0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(106, 159, 241, 0.3);
+}
+
+/* Outline Links */
+.home-link {
+    border: 2px solid #6a9ff1;
+    color: #6a9ff1;
+    background: transparent;
+}
+
+.home-link:hover {
+    background-color: #6a9ff1;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}

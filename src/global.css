@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf2ff, #f8fbff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Glass Card */
+.auth-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  width: 420px;
+  padding: 45px;
+  border-radius: 24px;
+  box-shadow: 0 20px 45px rgba(106, 159, 241, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Title */
+.auth-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Labels */
+.auth-card label {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.auth-card input:focus {
+  border-color: #6a9ff1;
+  box-shadow: 0 0 0 3px rgba(106, 159, 241, 0.25);
+}
+
+/* Buttons */
+.auth-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: #6a9ff1;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #5a8ee0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(106, 159, 241, 0.35);
+}
+
+.secondary-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: 2px solid #6a9ff1;
+  background: #ffffff;
+  color: #6a9ff1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #6a9ff1;
+  color: #ffffff;
+}
