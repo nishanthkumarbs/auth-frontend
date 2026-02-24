@@ -1,0 +1,30 @@
+{
+  "register": [
+    {
+      "id": "9607",
+      "name": "Nikhil",
+      "email": "nikhil@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "906b",
+      "name": "Nishanth",
+      "email": "nishanthgowda014@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2b1e",
+      "name": "admin",
+      "email": "p@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "c1fa",
+      "username": "Nishanth",
+      "phone": "8971288476",
+      "email": "gowdas0018@gmail.com",
+      "password": "123456",
+      "age": "22"
+    }
+  ]
+}
